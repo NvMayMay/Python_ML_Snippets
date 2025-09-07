@@ -114,3 +114,23 @@ plt.xlabel('Importance Score')
 # Print test score 
 test_score = model.score(X_test, y_test)
 #print(f"\nTest set accuracy: {test_score:.2%}")
+
+#Try a different model, specifically LogisticRegression
+# Replace RandomForestClassifier with LogisticRegression
+pipeline.set_params(classifier=LogisticRegression(random_state=42))
+# update the model's estimator to use the new pipeline
+model.estimator = pipeline
+# Define a new grid with Logistic Regression parameters
+param_grid = {
+    # 'classifier__n_estimators': [50, 100],
+    # 'classifier__max_depth': [None, 10, 20],
+    # 'classifier__min_samples_split': [2, 5],
+    'classifier__solver' : ['liblinear'],
+    'classifier__penalty': ['l1', 'l2'],
+    'classifier__class_weight' : [None, 'balanced']
+}
+model.param_grid = param_grid
+# Fit the updated pipeline with Logistic Regression
+model.fit(X_train, y_train)
+# Make predictions
+y_pred = model.predict(X_test)
