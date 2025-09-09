@@ -1,4 +1,4 @@
-# This builds a basic neural network
+# This explicitly builds a basic neural network
 # Install required libraries
 # python3 -m pip install numpy 
 

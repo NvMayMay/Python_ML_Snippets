@@ -145,3 +145,11 @@ model.summary()
 
 # Step 6: Train the Model
 history_glorot_adam = model.fit([input_sequences, decoder_input_data], decoder_output_data, epochs=100, batch_size=16)
+
+# Plotting training loss
+import matplotlib.pyplot as plt
+plt.plot(history_glorot_adam.history['loss'])
+plt.title('Training Loss')
+plt.xlabel('Epochs')
+plt.ylabel('Loss')
+plt.show()
