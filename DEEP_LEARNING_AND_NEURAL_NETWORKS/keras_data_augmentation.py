@@ -54,7 +54,7 @@ height_shift_range=0.2,      # Randomly shift images vertically by up to 20% of 
 shear_range=0.2,             # Apply random shearing transformations up to 0.2 radians
 zoom_range=0.2,              # Randomly zoom in or out on images by up to 20%
 horizontal_flip=True,        # Randomly flip images horizontally
-fill_mode='nearest'          # Fill in new pixels after transformations using the nearest
+fill_mode='nearest'          # Fill in new pixels after transformations using the nearest pixel values
 )
 # Generate batches of augmented images
 i = 0
