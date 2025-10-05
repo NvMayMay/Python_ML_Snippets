@@ -210,7 +210,6 @@ import matplotlib.pyplot as plt
 # Initialize counters for actual and predicted classes
 actual_count = Counter()
 predicted_count = Counter()
-
 # Function to get class name from predicted index
 def get_class_name_from_index(predicted_index, class_index_mapping):
     """Convert predicted index to class name."""
@@ -218,7 +217,6 @@ def get_class_name_from_index(predicted_index, class_index_mapping):
         if index == predicted_index:
             return class_name
     return "Unknown"  # Default if index is not found
-
 # Define the function for visualization
 def visualize_prediction_with_actual(img_path, class_index_mapping):
     # Extract the true label dynamically from the directory structure

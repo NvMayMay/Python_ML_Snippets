@@ -1,4 +1,4 @@
-# This builds a basic neural network to 
+# This builds a basic neural network to classify images from the MNIST dataset using Keras.
 # Install required libraries
 # python3 -m pip install matplotlib==3.9.2 tensorflow_cpu==2.18.0
 import os

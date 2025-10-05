@@ -1,4 +1,4 @@
-# This code solves reinforcement learning tasks using Deep Q-Learning with Keras.
+# This code solves reinforcement learning tasks using Q-Learning with Keras.
 # Install required libraries
 # python3 -m pip install tensorflow keras numpy scikit-learn gym
 
